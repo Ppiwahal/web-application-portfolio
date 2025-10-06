@@ -1,0 +1,162 @@
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
+
+body {
+  background: #f7f7f7;
+  color: #222;
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+}
+
+/* General centering utility */
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* About section centering */
+#about .subheading {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+#about .image-circle {
+  display: block;
+  margin: 1em auto;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Set the font family for any h1, h2, or h3 heading */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Times, serif;
+}
+
+article {
+  padding: 50px 0;
+}
+
+article div {
+  text-align: center;
+  width: 100%;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* The div container constrains the content width within the main container to 600px */
+div {
+  margin: auto;
+  width: 600px;
+}
+
+img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+/* Headings styling */
+.about-heading,
+.portfolio-heading,
+.contact-heading {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.subheading {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+/* Footer and header centering */
+header.center,
+footer.center {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Navigation styling */
+nav {
+  margin: 1em 0;
+}
+
+nav a {
+  color: #e74c3c;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Portfolio section centering */
+#portfolio .project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.project-name {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+#portfolio img {
+  max-width: 300px;
+  border-radius: 16px;
+  margin-bottom: 0.5em;
+}
+
+/* Contact section centering */
+#contact {
+  text-align: center;
+  margin-top: 2em;
+}
+
+/* Bulleted lists styling */
+ul {
+  text-align: left;
+  margin: 1em auto;
+  max-width: 400px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+
+  .about-heading,
+  .portfolio-heading,
+  .contact-heading {
+    font-size: 2em;
+  }
+
+  .image-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  #portfolio img {
+    max-width: 180px;
+  }
+}
